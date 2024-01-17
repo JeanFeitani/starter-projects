@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    padding: 0;
+    margin: 0;
+}
+
+.conteiner {
+    margin: 0 auto; 
+}
+
+
+span {
+    color: blueviolet;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-size: 44px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18.2px;
+    line-height: 30px;
+    font-family: 'Inter';
+    color: hsla(0, 0%, 100%, 0.6);
+}
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+h4 {
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    background-color: hsl(244, 38%, 16%);
+    grid-template-areas: 'text' 'imag';
+    margin: 150px 200px;
+}
+
+#pa {
+    width: 100%;
+    height: auto;
+   border-radius: 0px 15px 15px 0px;
+    display: inline-block;
+}
+
+
+.sec-texto {
+    padding: 90px 90px 60px 90px ;
+    display: flex;
+    flex-direction: column;
+    grid-area: text;
+    width: 100%;
+}
+.div-itens {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.mx-30 {
+    margin-right: 5.2rem;
+    
+}
+
+.mb-15 {
+    margin-bottom: 1.8rem;
+}
+.mb-40 {
+    margin-bottom: 8.5rem;
+}
+
+
+
+
