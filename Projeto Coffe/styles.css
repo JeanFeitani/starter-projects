@@ -56,6 +56,7 @@ nav a {
     color: rgba(255, 242, 231, 0.50);
     text-decoration: none;
     font-weight: 500;
+    transition: all 500ms;
 }
 
 header > div > a {
@@ -64,10 +65,15 @@ header > div > a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #FFF2E7;
+    transition: all 500ms ease-in-out;
+}
+
 nav a:nth-child(1) {
     color: #FFF2E7;
     font-weight: 600;
-
+    transition: all 0ms;
 }
 
 .hero-sec {
@@ -112,8 +118,8 @@ nav a:nth-child(1) {
 
 .photos {
     column-count: 4;
-    gap: rem;
-    margin-top: -5.5rem;
+    gap: 1rem;
+    margin-top: -11.5rem;
 }
 
 
@@ -123,7 +129,7 @@ nav a:nth-child(1) {
 
  .photos img {
     width: 100%;
-    gap: .5rem;
+    margin: .4rem;
  }
 
 .but {
@@ -171,9 +177,10 @@ h2 {
 
 }
 
-.mp {
+.div-2 > .mp {
     text-align: center;
     margin-top: 2rem;
+    margin-left: 0rem;
 }
 
 .cards {
@@ -195,8 +202,41 @@ article {
 }
 
 
-article h4 {
-    margin-bottom: 0.38rem;
+article:first-child .art-title h4 {
+    color: var(--color-quinary)
+
+}
+
+.art-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: '1' '2';
+    row-gap: 0.38rem;
+}
+
+.art-title p {
+    text-align: right;
+    grid-area: bottom;
+    color: #756A67;
+    font-weight: 500;
+}
+.art-title h3 {
+    grid-area: 2;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+}
+.usuario img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 62.4375rem;
+  
 }
 
 footer {
