@@ -17,10 +17,6 @@
     --color-footer : #23181A;
 }
 
-/* body {
-    background-color: var(--color-hero);
-} */
-
 h1, h2, h3 {
     color: var(--color-white);
     font-family: 'Montserrat', sans-serif; 
@@ -107,14 +103,20 @@ nav a:nth-child(1) {
 
 
 .photos {
-    max-height: 20rem;
+    max-height: 21rem;
+    bottom: 4rem;
+    position: relative;
     overflow: hidden;
 }
 /* pq o conteúdo ultrapassava a área da div e estendia a section e todo seu background? isso tbm acontece com o texto*/
 
 main {
     background: var(--color-header);
-    padding: 4rem 10rem;
+    padding: 4rem 0;
+}
+.main {
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 h2 {
@@ -122,27 +124,42 @@ h2 {
     font-weight: 700;
 }
 
-main > p {
+.main > p {
     font-size: 1.125rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+}
+
+
+.mp {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 2rem;
-    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
 }
 
 article {
     background-color: var(--color-card);
-    min-width: 36rem;
-    max-width: 40rem;
+    width: auto;
     padding: 1.5rem;
-    border: solid 0.5rem var(--color-card);
-    box-sizing: content-box;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   
+}
+
+article h4 {
+    margin-bottom: 0.38rem;
 }
 
 footer {
     background: var(--color-footer);
+    padding: 4rem 10rem;
+    text-align: center;
 }
