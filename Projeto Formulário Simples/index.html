@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="img">
+            <img src="./assets/undraw_shopping_re_hdd9.svg" alt="">
+        </div>
+        <div class="form">
+            <div class="header">
+                <h1>Cadastre-se</h1>
+                <button><a href="#">Entrar</a></button>
+            </div>
+            <form action="#">
+                <div class="input">
+                    <label for="nome">Primeiro Nome</label>
+                    <input id="nome" type="text" placeholder="Digite seu primeiro nome">
+                </div>
+                
+                <div class="input">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input id="sobrenome" type="text" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="Digite seu e-mail">
+                    
+                </div>
+                <div class="input">
+                    <label for="celular">Celular</label>
+                    <input id="celular" type="number" placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div class="input">
+                    <label for="Senha">Senha</label>
+                    <input id="Senha" type="password" placeholder="Digite sua senha">
+                </div>
+
+                <div class="input">
+                    <label for="cSenha">Confirme sua Senha</label>
+                    <input id="cSenha" type="password" placeholder="Digite sua senha novamente">
+                </div>
+
+                <div class="check">
+                    <div class="ch">
+                        <input type="radio" name="gender" id="female">
+                        <label id="female">Feminino</label>
+                    </div>
+                    <div class="ch">
+                        <input type="radio" name="gender" id="male">
+                        <label id="male"> Masculino</label>
+                    </div>
+                    <div class="ch">
+                        <input type="radio" name="gender" id="others">
+                        <label id="others"> Outros</label>
+                    </div>
+                    <div class="ch">
+                        <input type="radio" name="gender" id="not">
+                        <label id="not"> Prefiro não dizer</label>
+                    </div>
+                </div>
+            </form>
+
+            <button>Continuar</button>
+        </div>
+    </main>
+</body>
+</html>
