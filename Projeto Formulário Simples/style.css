@@ -55,10 +55,18 @@ form {
 } 
 
 .check {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
     grid-column-start: span 2;
+}
+
+
+.radio {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 
 }
 
