@@ -9,7 +9,7 @@
 
 
 header {
-    position: fixed;
+    position: fixed; /**/
     top: 0;
     right: 0;
     z-index: 1;
@@ -63,10 +63,224 @@ ul a:hover {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    padding: 0 9%;
 }
 
 .hero-img img {
-    width: 50%;
+    width: 700px;
+    height: auto;
+    display: block;
+    margin-left: auto;
 }
 
+main {
+    padding: 0 19%; /*mesmo elemento que .hero acima*/
+}
+
+.hero-text h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-text h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px; /*porque é o h1 que delimita o tamanho do grid, a imagem só não briga com ele mas diminui e/ou quebra todos os outros itens*/
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    max-width: 28rem;
+}
+
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+
+}
+
+
+.hero-text a.ctaa {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+
+
+.ctaa i {
+    vertical-align: middle; /**/
+    margin-right: 5px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .5s ease;
+
+}
+
+.icons i:hover {
+    color: #4d9559;
+    transform: translateY(-5px);
+}
+
+.scroll {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+
+.scroll i:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s; 
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll {
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    main {
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+} 
+
+@media screen and (max-width: 1195px) {
+    main {
+        padding: 0 3%;
+        
+    }
+    .hero-text {
+        padding-top: 115px;
+    }
+    .hero-img {
+        justify-self: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .hero {
+        height: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .icons {
+        display: none;
+    }
+    .scroll {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 0;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .75s ease;
+        gap: 0;
+    }
+    .navlist a {
+        display: block;
+        margin: 7px 0 12px;
+        margin-left: 0;
+        filter: opacity(100%);
+    }
+    
+    .navlist.open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+}
