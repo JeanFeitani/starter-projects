@@ -1,0 +1,160 @@
+@import url(layout.css);
+@font-face {
+    font-family: 'Axiforma';
+    src: url(Assets/Axiforma-Font-Family/Kastelov\ -\ Axiforma\ Black.otf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url(Assets/Axiforma-Font-Family/Kastelov\ -\ Axiforma\ Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url(./Assets/Axiforma-Font-Family/Kastelov\ -\ Axiforma\ SemiBold.otf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Axiforma';
+    src: url(Assets/Axiforma-Font-Family/Kastelov\ -\ Axiforma\ Light\ Italic.otf);
+    font-style: italic;
+    font-weight: 300;
+}
+
+:root {
+    --logo: #DF1CFF;
+    
+}
+
+.blue, h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Axiforma';
+}
+
+a, li, button {
+    text-decoration: none;
+    list-style: none;
+    border-style: none;
+}
+
+
+.logo {
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--logo)
+}
+
+.navbar a {
+
+    color:rgba(255, 255, 255, 0.43);
+    font-size: 1.25rem;
+}
+
+nav button {
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--Unnamed-Color, #E50AA7);
+    background: var(--Unnamed-Color, rgba(255, 255, 255, 0.05));
+    box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.15);
+    padding: 0.75rem 2.5rem;
+}
+
+nav button a {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.48356rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%;
+}
+
+.blue {
+    color: #1EE0E1;
+    font-weight: 300;
+    line-height: 130%;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.hero-text button {
+    border-radius: 0.5rem;
+    background: var(--logo);
+    padding: 0.75rem 2.5rem;
+    align-self: flex-start;
+    margin-top: 2rem;
+}
+.hero-text button a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.ov-title img {
+    width: 3rem;
+    margin-right: 1rem;
+
+}
+
+.ov-title {
+    font-size: 2rem;
+}
+
+.custom-text {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 900;
+    line-height: 130%;
+    font-size: 2.5rem;
+}
+
+.sec-1 ul li {
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+
+.card {
+    background-color: #17133A;
+    padding: 2rem;
+    height: 36.2rem;
+}
+
+h5 {
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.but-card {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.75rem 2.5rem;
+    width: 100%;
+    transition: all .5s ease;
+}
+
+.botao {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: var(--logo);
+    transition: all .5s ease;
+}
+
+.card-container {
+    overflow: hidden;
+    max-height: 32.2rem;
+}
