@@ -276,7 +276,7 @@ main {
     .navlist.open {
         right: 0;
     }
-}
+}  
 
 @media screen and (max-width: 680px) {
     .hero-img img {
