@@ -90,7 +90,7 @@ ul {
 }
 
 .hero-img img {
-    width: 42rem;
+    width: 38rem;
     border-radius: 35rem;
     position: relative;
     left: 2.8rem;
@@ -118,6 +118,7 @@ ul {
 
 .sec-1 {
     text-align: center;
+    margin-bottom: 8rem;
 }
 
 .sec-1 ul {
@@ -134,6 +135,7 @@ ul {
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-rows: repeat(3, auto) ;
     grid-gap: 2rem ;
+    margin-bottom: 4rem;
 }
 
 .card-img {
@@ -192,6 +194,26 @@ ul {
 .card:hover .stars  {
     margin-bottom: 2rem;
 
+}
+
+.sec-2-tittle {
+    text-align: center;
+}
+
+.sec-2 {
+    margin-bottom: 8rem;
+
+}
+
+.sec-2-tittle h2 {
+    margin-bottom: 5.33rem;
+    margin-top: 1.5rem;
+}
+
+.cards-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
 }
 
 

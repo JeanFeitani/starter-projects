@@ -80,6 +80,7 @@ h1 {
 
 p {
     font-size: 1.25rem;
+    opacity: 0.8;
 }
 
 .hero-text button {
@@ -158,3 +159,44 @@ h5 {
     overflow: hidden;
     max-height: 32.2rem;
 }
+
+.sec-1-a {
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--Unnamed-Color, #E50AA7);
+    background: var(--Unnamed-Color, rgba(255, 255, 255, 0.05));
+    box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.15);
+    padding: 0.75rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.card-2 {
+ 
+    width: 39rem;
+    height: 13.4655rem;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.card-2-text {
+    background-color: #17133A;
+    padding: 3.44rem 5rem 3.15rem 3.5rem;
+    border-radius: .5rem;
+    margin-top: 1.33rem;
+}
+
+.card-2 h5 {
+    margin-bottom: 1.5rem;
+}
+
+.card-2 img{
+    position: absolute;
+    background-color: #050421;
+    padding: 1.58rem;
+    border-radius: .5rem;
+    width: 7.65431rem;
+    right: -10px;
+    top: -60px;
+    display: block;
+}
+
