@@ -7,7 +7,7 @@
 }
 
 .gradient-1 {
-    z-index: -2;
+    z-index: -1;
     border-radius: 155.26063rem;
     background: conic-gradient(from 180deg at 50% 50%, rgba(217, 217, 217, 0.10) 0deg, rgba(41, 127, 255, 0.10) 0.035999999090563506deg, rgba(191, 56, 255, 0.10) 78.75deg, rgba(207, 104, 255, 0.10) 187.49999284744263deg, rgba(40, 203, 255, 0.10) 268.1250071525574deg, rgba(225, 161, 255, 0.10) 360deg);
     position: absolute;
@@ -15,11 +15,11 @@
     height: 155.26063rem;
     transform: rotate(-45deg);
     filter: blur(250px);
-    left: -52rem;
+    right: -12rem;
     top: -58rem;
 }
 .gradient-2 {
-    z-index: -1;
+    z-index: -2;
     border-radius: 155.26063rem;
     background: conic-gradient(from 180deg at 50% 50%, rgba(141, 255, 27, 0.06) 0deg, rgba(41, 127, 255, 0.06) 0.035999999090563506deg, rgba(56, 112, 255, 0.06) 97.50000357627869deg, rgba(15, 123, 251, 0.06) 187.49999284744263deg, rgba(0, 194, 255, 0.06) 283.1249928474426deg, rgba(225, 161, 255, 0.06) 360deg);
     position: absolute;
@@ -27,8 +27,8 @@
     height: 155.26063rem;
     transform: rotate(-45deg);
     filter: blur(250px);
-    right: -90rem;
-    top: -32rem;
+    left: -10rem;
+    top: 25rem;
    
 }
 
@@ -38,19 +38,30 @@ body {
     height: auto;
     background: var(--Unnamed-Color, #04011C);
     overflow-x: hidden;
-   
+    position: relative;
+    
 }
 
 .container {
     max-width: 90rem;
     padding: 0 5rem;
     margin: 0 auto;
+    z-index: -5;
+    position: relative;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
 }
 
 header {
     margin-top: 2.3rem;
+    margin-bottom: 14rem;
 }
-
 
 nav {
     display: flex;
@@ -63,12 +74,11 @@ ul {
     column-gap: 2.81rem;
 }
 
-
 .hero-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 10rem;
     position: relative;
+    margin-bottom: 10rem;
 }
 
 .hero-text {
@@ -86,18 +96,47 @@ ul {
 }
 
 .hero-img {
-    position: relative;
+   position: relative;
 }
 
-.hero-img img {
-    width: 38rem;
+.hero-img picture {
+    width: 31rem;
+    height: auto;
     border-radius: 35rem;
-    position: relative;
-    left: 2.8rem;
-    display: block;
-    border: 1px solid #254286;
-    padding: 3rem;
+    position: absolute;
+    top: -6rem;
+    right: 0;
 }
+.hero-img picture img {
+    transform: scale(118%);
+    position: relative;
+    left: 2rem;
+    top: 2.8rem;
+}
+.shape {
+    top: -9.2rem;
+    right: -5.92rem;
+    position: absolute;
+}
+
+.circle {
+    background-color: #07003E;
+    width: 12rem;
+    height: 12rem;
+    font-family: 'Axiforma';
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8rem;
+    border: 1px solid #DF1CFF ;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    top: 18rem;
+    left: 6rem;
+    line-height: 115%;
+}
+
 
 .overview {
     display: grid;
