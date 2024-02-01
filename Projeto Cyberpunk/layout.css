@@ -192,14 +192,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .eth {
     display: flex;
     align-items: center;
-    justify-content: end;
     gap: 0.44rem;
+}
+
+.eth h4 {
+    margin-top: .3rem;
 }
 
 .stars {
@@ -216,10 +218,7 @@ ul {
     height: auto;
     transition: all 0.7s ease;
     max-height: 200px;
-}
-
-.card:hover .but-card {
-    pointer-events: auto;
+    cursor: pointer;
 }
 
 .card:hover .card-img {
@@ -241,7 +240,6 @@ ul {
 
 .sec-2 {
     margin-bottom: 8rem;
-
 }
 
 .sec-2-tittle h2 {
