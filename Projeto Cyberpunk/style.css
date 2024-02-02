@@ -44,8 +44,9 @@ a, li, button, input{
 p {
     font-size: 1.25rem;
     opacity: 0.8;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
+    font-family: 'Helvetica'
 }
 
 
@@ -214,3 +215,11 @@ input {
 }
 
 
+hr {
+    width: 100%;
+    opacity: .1;
+    display: block;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  
+}

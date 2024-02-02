@@ -359,12 +359,25 @@ picture {
 
 .article picture{
     width: 27.175rem;
-    height: 17.5rem;
+    height: 18rem;
     border-radius: 1.5rem;
 
 }
 .article picture img{
+}
+
+#mage {
     width: 34rem;
+    height: auto;
+    position: relative;
+    top:-16.7rem;
+    right:3.7rem;
+    transform: rotate(20deg);
+    
+}
+
+#toys {
+    width: 28rem;
     height: auto;
 }
 
@@ -402,4 +415,27 @@ picture {
 .sec-6 p {
     max-width: 38rem;
     margin: 0 auto;
+}
+
+.contact-circle {
+    background-color: #1A124F;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    text-align: center;
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
 }
