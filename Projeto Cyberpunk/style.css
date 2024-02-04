@@ -200,15 +200,20 @@ font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
-.card-2 img{
+.pics {
+    padding-left: 1.58rem;
+    padding-bottom: 1.45rem;
+    border-radius: .6rem;
+    width: 6rem;
     position: absolute;
     background-color: #050421;
-    padding: 1.58rem;
-    border-radius: .6rem;
-    width: 7.65431rem;
-    right: -20px;
-    top: -2.7rem;
+    right: .35rem;
+    top: -1.28rem;
     display: block;
+}
+
+.color{
+    background-color: #04021e;
 }
 
 .get {
@@ -245,5 +250,19 @@ hr {
     display: block;
     margin-bottom: 4rem;
     margin-top: 4rem;
-  
+}
+
+.contact-circle {
+    background-color: #1A124F;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 2.5rem;
 }
