@@ -250,6 +250,7 @@ ul {
 .cards-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 13.4655rem;
     grid-gap: 2rem;
 }
 
@@ -362,8 +363,6 @@ picture {
     height: 18rem;
     border-radius: 1.5rem;
 
-}
-.article picture img{
 }
 
 #mage {

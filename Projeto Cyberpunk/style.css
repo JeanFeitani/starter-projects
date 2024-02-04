@@ -44,9 +44,9 @@ a, li, button, input{
 p {
     font-size: 1.25rem;
     opacity: 0.8;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 140%;
-    font-family: 'Helvetica'
+    font-family: "Helvetica"
 }
 
 
@@ -130,9 +130,8 @@ font-weight: 600;
     font-size: 1.375rem;
     font-weight: 500;
     cursor: default;
-    
-}
 
+}
 
 .card {
     background-color: #17133A;
@@ -159,17 +158,42 @@ font-weight: 600;
 }
 
 .card-2 {
-    width: 39rem;
-    height: 13.4655rem;
-    border-radius: .5rem;
     position: relative;
+    margin-top: 1.33rem;
+    border-radius: .1rem;
 }
 
 .card-2-text {
-    background-color: #17133A;
-    padding: 3.44rem 5rem 3.15rem 3.5rem;
+    padding: 3.44rem 2rem 3.15rem 3.5rem;
     border-radius: .5rem;
-    margin-top: 1.33rem;
+    
+}
+
+.back {
+    background-color: #0D0D2D;
+    width: 32.6rem;
+    height: 5rem;
+    position: absolute;
+    z-index: -2;
+    border-radius: .7rem .7rem 0 0;
+}
+.back-2 {
+    background-color: #0D0D2D;
+    width: 100%;
+    height: 7.3522rem;
+    position: absolute;
+    z-index: -2;
+    border-radius: 0 .7rem .7rem .7rem ;
+    top: 5rem;
+}
+.back-3 {
+    background-color: #0D0D2D;
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    right: 3rem;
+    top:4rem;
+    z-index: -1;
 }
 
 .card-2 h5 {
@@ -180,10 +204,10 @@ font-weight: 600;
     position: absolute;
     background-color: #050421;
     padding: 1.58rem;
-    border-radius: .5rem;
+    border-radius: .6rem;
     width: 7.65431rem;
     right: -20px;
-    top: -30px;
+    top: -2.7rem;
     display: block;
 }
 
