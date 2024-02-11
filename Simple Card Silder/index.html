@@ -2,37 +2,165 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Slider</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="slide-container">
+        <button id="bac">&lt</button>
         <div class="slide-content">
+            
             <div class="card-wrapper">
                 <div class="card">
                     <div class="image-content">
                         <span class="overlay"></span>
 
                         <div class="card-image">
-                            <img class="card-img1" src="./assets/profile-image (1).jpg" alt="">
+                            <img class="card-img1" src="./assets/profile-image (7).jpg" alt="">
                         </div>
                     </div>
 
-                   <div class="card-content">
-                    <h2 class="name">David Dell</h2>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus
+                            excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
 
-                    <button class="button">View more</button>
-                   </div> 
+                        <button class="button">View more</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img class="card-img1" src="./assets/profile-image (2).jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus
+                            excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
+
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img class="card-img1" src="./assets/profile-image (4).jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus
+                            excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
+
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img class="card-img1" src="./assets/profile-image (11).jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus
+                            excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
+
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img class="card-img1" src="./assets/profile-image (5).jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus
+                            excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
+
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img class="card-img1" src="./assets/profile-image (10).jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab. Ducimus
+                            excepturi dicta iure omnis autem vero quaerat, natus distinctio! Laboriosam !</p>
+
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button id="back">&gt</button>
+
+        
+        <script>
+
+            let scrollContainer = document.querySelector(".slide-content")
+            let backBtn = document.getElementById('bac')
+            let nextBtn = document.getElementById('back')
+
+            scrollContainer.addEventListener("wheel", (evt => {
+                evt.preventDefault();
+                scrollContainer.style.scrollBehavior = "smooth"
+                scrollContainer.scrollLeft += evt.deltaY;
+            }))
+            nextBtn.addEventListener("click", () =>{
+                scrollContainer.style.scrollBehavior = "smooth"
+                scrollContainer.scrollLeft =+ 1040
+            });
+            backBtn.addEventListener("click", () =>{
+                scrollContainer.style.scrollBehavior = "smooth"
+                scrollContainer.scrollLeft =+ 1040
+            });
+        </script>
 </body>
 
 </html>
