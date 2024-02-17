@@ -84,7 +84,8 @@ gridButton.addEventListener("click", () => {
 })
 
 function checker(elementId) {
-    let gridColumns = document.querySelector(".gridCol")
+    let gridColumns = document.querySelectorAll(".gridCol")
+
     gridColumns.forEach((element)=>{
         if(elementId == element.id){
             if(draw && !erase) {
@@ -103,7 +104,7 @@ eraseBtn.addEventListener("click", () => {
 })
 
 paintBtn.addEventListener("click", () => {
-    erase = true
+    paint = true
 })
 
 gridWidth.addEventListener("input", () =>{
