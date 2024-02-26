@@ -18,10 +18,10 @@ app.use((error, request, response, next) => {
         })
     }
 
-    return response.status(500).json({
-        status: "error",
-        messasge: "Internal server error"
-    })
+    // return response.status(500).json({
+    //     status: "error",
+    //     messasge: "Internal server error"
+    // })
 })
 
 const PORT = 3333;
