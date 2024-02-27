@@ -51,10 +51,9 @@ class UsersController {
                 throw new AppError("Senha atual informada incorreta")
             }
 
-
-            // if(user.password !== old_password){
-            //     throw new AppError("Senha atual informada incorreta")
-            // }
+            if(password === old_password){
+                throw new AppError("Informe uma senha diferente a antiga senha.")
+            }
 
              user.password = await hash(password, 8)
         }
