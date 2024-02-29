@@ -7,7 +7,10 @@ import { Button } from "./../../components/Button/index";
 export function SignIn() {
   return (
     <Container>
+      <Background/>
+
       <Form>
+
         <h1>React Notes</h1>
         <p>Aplicação para salvar e gerenciar seus links úteis.</p>
 
@@ -25,7 +28,6 @@ export function SignIn() {
 
         <a href="#">Criar Conta</a>
       </Form>
-      <Background/>
 
     </Container>
   );

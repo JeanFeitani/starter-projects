@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/sonia-jahandari-Iz_dQ_t_9HE-unsplash.jpg"
+import backgroundImg from "../../assets/jan-kahanek-g3O5ZtRk2E4-unsplash.jpg"
 
 
 export const Container = styled.div`
@@ -24,8 +24,7 @@ export const Form = styled.form`
 
   > h2 {
     font-size: 24px;
-    margin-top: 84px;
-    margin-bottom: 24px;
+    margin: 48px 0;
   }
 
   > p {
@@ -43,19 +42,7 @@ flex: 1;
 background: url(${backgroundImg}) ;
 background-size: cover;
 filter: brightness(0.3);
-position: relative;
 
-::after {
-  content: 'Olá';
-  width: 100px;
-  height: 100px;
-  display: block;
-  background-color: red;
-  position: absolute;
-  z-index: 10;
-  inset: 0;
-  margin: 0 auto;
-}
 
 `
 
