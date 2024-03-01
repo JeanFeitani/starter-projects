@@ -4,7 +4,7 @@ class NotesController {
     async create(request, response) {
 
         const { title, description, tags, links } = request.body
-        const { user_id } = request.params
+        const  user_id  = request.user.id
 
         const [note_id] = await knex("notes").insert({
             title,
@@ -54,9 +54,11 @@ class NotesController {
         return response.json()
     }
     async index(request, response) {
-        const { user_id, title, tags } = request.query
+        const { title, tags } = request.query
         let notes
-            
+
+        const user_id = request.user.id
+
         if(tags){
             const filterTags = tags.split(',').map(tag => tag.trim())
 
