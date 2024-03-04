@@ -6,6 +6,7 @@ export const AuthContext = createContext({});
 function AuthProvider({ children }) {
   const [ data, setData ] = useState({})
 
+
   async function signIn({ email, password }) {
     try {
       const response = await api.post("/sessions", { email, password });
@@ -13,6 +14,8 @@ function AuthProvider({ children }) {
 
       localStorage.setItem("@reactnotes:user", JSON.stringify(user))
       localStorage.setItem("@reactnotes:token", JSON.stringify(token))
+
+      console.log(user)
 
       api.defaults.headers.common['Authorization'] = `Bearer ${token}`
       await setData({ user, token })
@@ -43,12 +46,12 @@ function AuthProvider({ children }) {
 
     try{
       await api.put("/users", user)
+
       localStorage.setItem("@reactnotes:user", JSON.stringify(user))
-      console.log(data)
-      console.log(data.token)
+
       setData({ user, token: data.token })
-      console.log(data)
       alert("Perfil atualizado.");
+
     }catch (error) {
       if (error.response) {
         alert(error.response.data.message);
@@ -62,7 +65,7 @@ function AuthProvider({ children }) {
     const user = localStorage.getItem("@reactnotes:user")
     const token = localStorage.getItem("@reactnotes:token")
     if(token && user){
-      api.defaults.headers.common['Authorization'] = `Bearer ${token}`
+      api.defaults.headers.common['Authorization'] = `Bearer ${JSON.parse(token)}`
     
       setData({
         token,

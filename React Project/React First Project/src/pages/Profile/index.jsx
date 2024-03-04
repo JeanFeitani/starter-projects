@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useAuth } from '../../hooks/auth'
 import { api } from "../../services/api";
+
 import avatarPlaceholder from '../../assets/depositphotos_137014128-stock-illustration-user-profile-icon.jpg'
 
 
@@ -18,6 +19,7 @@ export function Profile(){
     const [newPassword, setNewPassword] = useState();
 
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
+
     const [avatar, setAvatar] = useState(avatarUrl)
     const [avatarFile, setAvatarFile] = useState(null)
 
@@ -54,7 +56,6 @@ return (
                 <img
                 src={avatar}
                 alt="" />
-
                 <label htmlFor="avatar">
                 <FiCamera/>
                 <input
@@ -72,7 +73,7 @@ return (
         />
         
         <Input
-        placeholder={user.email}
+        defaultValue={user.email}
         type="text"
         icon={FiMail}
         onChange={e => setEmail(e.target.value)}

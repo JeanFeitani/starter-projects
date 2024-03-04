@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -37,15 +36,15 @@ export const Brand = styled.div`
 `;
 
 export const Menu = styled.ul`
+  padding-top: 64px;
   grid-area: menu;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-  
+
   text-align: center;
 
   > li {
     margin-bottom: 24px;
   }
-
 `;
 
 export const Search = styled.div`
