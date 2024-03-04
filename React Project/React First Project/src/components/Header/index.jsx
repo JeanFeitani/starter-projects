@@ -22,9 +22,10 @@ export function Header() {
         </div>
       </Profile>
 
-      <Logout onClick={() => {
-        signOut()
-        }}>
+      <Logout 
+      onClick={signOut}
+      to="/"
+      >
         <RiShutDownLine />
       </Logout>
     </Container>

@@ -41,7 +41,7 @@ export const Profile = styled(Link)`
   }
 `;
 
-export const Logout = styled.button`
+export const Logout = styled(Link)`
   border: none;
   background: none;
 

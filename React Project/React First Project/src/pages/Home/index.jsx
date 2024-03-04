@@ -34,7 +34,7 @@ export function Home() {
   }
   
   function handleDetails(id){
-    navigate("/detais")
+    navigate(`/details/${id}`)
   }
 
   useEffect(() => {
@@ -99,7 +99,7 @@ export function Home() {
             <Note 
             key={String(note.id)}
             data={note}
-
+            onClick={() => handleDetails(note.id)}
             />
           ))
           }
