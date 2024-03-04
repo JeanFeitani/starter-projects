@@ -5,11 +5,13 @@ import { SignUp } from '../pages/SignUp'
 
 
 export function AuthRoutes(){
-
+const user = localStorage.getItem("@reactnotes:user")
+console.log(user)
     return(
         <Routes>
             <Route path='/' element={<SignIn />} />
             <Route path='/register' element={<SignUp />} />
+            {!user && <Route path='*' element={<Navigate to="/" />} />}
 
        
         </Routes>
