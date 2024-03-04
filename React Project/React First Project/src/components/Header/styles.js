@@ -44,6 +44,8 @@ export const Profile = styled(Link)`
 export const Logout = styled(Link)`
   border: none;
   background: none;
+  align-items: center;
+  display:flex;
 
   > svg{
     color: ${({ theme }) => theme.COLORS.GRAY_100};

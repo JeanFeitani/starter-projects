@@ -18,13 +18,14 @@ export const Container = styled.div`
 
     padding: 12px;
     color: ${({ theme }) => theme.COLORS.WHITE};
-    background: transparent;
+    background-color: transparent !important;
     border: 0;
     &:placeholder {
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
   }
+
   > svg {
         margin-left: 16px;
     }

@@ -9,6 +9,7 @@ import { Button } from "./../../components/Button/index";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { api } from "../../services/api";
+import { ButtonText } from './../../components/ButtonText/index';
 
 export function New() {
     const [title, setTitle] = useState("")
@@ -22,6 +23,9 @@ export function New() {
 
     const navigate = useNavigate()
 
+    function handleBack(){
+      navigate(-1)
+    }
 
     function handleAddLink(){
         setLinks(prevState => [...prevState, newLink])
@@ -43,21 +47,15 @@ export function New() {
     }
 
     async function handleNewNote(){
-        const aop = await api.post("/notes", {
+        await api.post("/notes", {
             title,
             description,
             tags,
             links
         })
-        // console.log(aop)
-        // console.log({
-        //         title,
-        //         description,
-        //         tags,
-        //         links
-        //  })
+      
         alert("sua nota foi criada com sucesso")
-        navigate("/")
+        navigate(-1)
     }
 
 
@@ -69,7 +67,7 @@ export function New() {
         <Form>
           <header>
             <h1>Criar Nota</h1>
-            <Link to="/">Voltar</Link>
+            <ButtonText title="Voltar" onClick={handleBack}/>
           </header>
 
           <Input placeholder="Título" onChange={e => setTitle(e.target.value)}/>
