@@ -14,7 +14,7 @@
 
 <body>
     <div class="slide-container">
-        <button id="bac">&lt</button>
+        <button id="back">&lt</button>
         <div class="slide-content">
             
             <div class="card-wrapper">
@@ -138,14 +138,14 @@
             </div>
 
         </div>
-        <button id="back">&gt</button>
+        <button id="next">&gt</button>
 
         
         <script>
 
             let scrollContainer = document.querySelector(".slide-content")
-            let backBtn = document.getElementById('bac')
-            let nextBtn = document.getElementById('back')
+            let backBtn = document.getElementById('back')
+            let nextBtn = document.getElementById('next')
 
             scrollContainer.addEventListener("wheel", (evt => {
                 evt.preventDefault();
@@ -158,7 +158,7 @@
             });
             backBtn.addEventListener("click", () =>{
                 scrollContainer.style.scrollBehavior = "smooth"
-                scrollContainer.scrollLeft =+ 1040
+                scrollContainer.scrollLeft =- 1040
             });
         </script>
 </body>

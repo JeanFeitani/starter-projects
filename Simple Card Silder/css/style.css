@@ -120,7 +120,7 @@ body {
     background: #265DF2;
 }
 
-#bac, #back {
+#back, #next {
     width: 5rem;
     height:3rem;
     font-size: 4rem;
@@ -135,10 +135,10 @@ body {
 
     
 }
-#bac{
+#back{
  left: -2rem;
 }
-#back {
+#next {
     right: -2rem;
     
 }
